@@ -117,4 +117,6 @@
     "editor.suggest.filteredTypes": {
         "keyword": false
     },
+    "editor.minimap.enabled": false,
+    "clangd.syncFileEvents": false,
 }
