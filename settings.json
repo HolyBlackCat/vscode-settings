@@ -114,4 +114,7 @@
     "editor.fontSize": 12,
     "breadcrumbs.enabled": false,
     "editor.codeInsets": true,
+    "editor.suggest.filteredTypes": {
+        "keyword": false
+    },
 }
