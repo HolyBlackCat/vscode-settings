@@ -256,7 +256,7 @@
         "command": "-workbench.view.explorer"
     },
     {
-        "key": "alt+` `",
+        "key": "shift+alt+`",
         "command": "workbench.action.togglePanel"
     },
     {
@@ -558,5 +558,9 @@
         "key": "shift+alt+f8",
         "command": "-editor.action.marker.prev",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+` `",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]
