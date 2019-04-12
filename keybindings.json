@@ -6,11 +6,6 @@
     {"key": "ctrl+alt+e",   "command": "workbench.action.tasks.runTask", "args": "Run"        },
 
     // Macros
-    // * Better indent
-    {"key": "tab",       "command": "macros.tab",      "when": "editorTextFocus && !editorTabMovesFocus && !editorHasSelection"},
-    {"key": "tab",       "command": "macros.indent",   "when": "editorTextFocus && !editorTabMovesFocus && editorHasSelection"},
-    {"key": "shift+tab", "command": "macros.untab",    "when": "editorTextFocus && !editorTabMovesFocus && !editorHasSelection"},
-    {"key": "shift+tab", "command": "macros.unindent", "when": "editorTextFocus && !editorTabMovesFocus && editorHasSelection"},
     // * Surround simple
     {"key": "alt+` shift+[", "command": "macros.surround_with_braces_l", "when": "editorTextFocus && editorHasSelection"},
     {"key": "alt+` shift+]", "command": "macros.surround_with_braces_r", "when": "editorTextFocus && editorHasSelection"},
@@ -569,13 +564,11 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "space",
-        "command": "-extension.indentOneSpace",
-        "when": "editorHasSelection && editorTextFocus && !editorReadOnly"
+        "key": "alt+` pagedown",
+        "command": "editor.action.sortLinesAscending"
     },
     {
-        "key": "shift+space",
-        "command": "-extension.reverseIndentOneSpace",
-        "when": "editorHasSelection && editorTextFocus && !editorReadOnly"
+        "key": "alt+` pageup",
+        "command": "editor.action.sortLinesDescending"
     },
 ]
