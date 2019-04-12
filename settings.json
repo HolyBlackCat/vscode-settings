@@ -43,7 +43,6 @@
     "workbench.enableExperiments": false,
     "workbench.list.horizontalScrolling": true,
     "workbench.editor.highlightModifiedTabs": true,
-    "files.autoSave": "afterDelay",
     "window.restoreWindows": "none",
     "editor.trimAutoWhitespace": false,
     "explorer.confirmDelete": false,
