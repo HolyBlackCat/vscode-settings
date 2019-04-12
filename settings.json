@@ -123,4 +123,10 @@
     },
     "editor.minimap.enabled": false,
     "clangd.syncFileEvents": false,
+    "debug.openExplorerOnEnd": true,
+    "debug.showInStatusBar": "never",
+    "debug.toolBarLocation": "docked",
+    "debug.console.lineHeight": 12,
+    "debug.console.fontFamily": "'Monokat 6x12', Consolas, 'Courier New', monospace",
+    "debug.console.fontSize": 12,
 }
