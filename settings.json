@@ -121,7 +121,6 @@
         "keyword": false
     },
     "editor.minimap.enabled": false,
-    "clangd.syncFileEvents": false,
     "debug.openExplorerOnEnd": true,
     "debug.showInStatusBar": "never",
     "debug.toolBarLocation": "docked",
