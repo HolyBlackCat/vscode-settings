@@ -122,4 +122,7 @@
     "debug.console.lineHeight": 12,
     "debug.console.fontFamily": "'Monokat 6x12', Consolas, 'Courier New', monospace",
     "debug.console.fontSize": 12,
+    "files.exclude": {
+        "obj/": true
+    },
 }
