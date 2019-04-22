@@ -571,4 +571,14 @@
         "key": "alt+` pageup",
         "command": "editor.action.sortLinesDescending"
     },
+    {
+        "key": "shift+space",
+        "command": "yo1dog.cursor-align.alignCursors",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+a",
+        "command": "-yo1dog.cursor-align.alignCursors",
+        "when": "editorTextFocus"
+    },
 ]
