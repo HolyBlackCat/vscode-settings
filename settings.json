@@ -20,7 +20,7 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontWeightBold": "normal",
-    "editor.renderControlCharacters": false,
+    "editor.renderControlCharacters": true,
     "editor.snippetSuggestions": "none",
     "files.hotExit": "off",
     "editor.showFoldingControls": "always",
