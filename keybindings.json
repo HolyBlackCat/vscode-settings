@@ -574,7 +574,7 @@
     {
         "key": "shift+space",
         "command": "yo1dog.cursor-align.alignCursors",
-        "when": "editorTextFocus"
+        "when": "editorHasMultipleSelections && textInputFocus"
     },
     {
         "key": "alt+a",
