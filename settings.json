@@ -2,7 +2,6 @@
     "workbench.statusBar.feedback.visible": false,
     "workbench.activityBar.visible": false,
     "workbench.tree.indent": 12,
-    "workbench.colorTheme": "Default Light+",
     "editor.fontFamily": "'Monokat 6x12', Consolas, 'Courier New', monospace",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.accessibilitySupport": "off",
@@ -107,7 +106,8 @@
         "close_suggestions_end" : ["hideSuggestWidget", "cursorEnd"],
     },
     "files.associations": {
-        "*.json": "jsonc"
+        "*.json": "jsonc",
+        "*.h": "cpp"
     },
     "git.enableSmartCommit": true,
     "editor.fontSize": 12,
@@ -130,4 +130,6 @@
     "material-icon-theme.hidesExplorerArrows": true,
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.folders.theme": "classic",
+    "files.autoSave": "off",
+    "workbench.colorTheme": "Cat's Light",
 }
