@@ -572,7 +572,7 @@
         "command": "editor.action.sortLinesDescending"
     },
     {
-        "key": "shift+space",
+        "key": "alt+` space",
         "command": "yo1dog.cursor-align.alignCursors",
         "when": "editorHasMultipleSelections && textInputFocus"
     },
