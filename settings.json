@@ -132,4 +132,6 @@
     "material-icon-theme.folders.theme": "classic",
     "files.autoSave": "off",
     "workbench.colorTheme": "Cat's Light",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
 }
