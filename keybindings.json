@@ -214,7 +214,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+1 4",
+        "key": "alt+` 4",
         "command": "workbench.view.debug"
     },
     {
@@ -222,7 +222,7 @@
         "command": "-workbench.view.debug"
     },
     {
-        "key": "alt+1 2",
+        "key": "alt+` 2",
         "command": "workbench.view.search",
         "when": "!searchViewletVisible"
     },
@@ -232,7 +232,7 @@
         "when": "!searchViewletVisible"
     },
     {
-        "key": "alt+1 3",
+        "key": "alt+` 3",
         "command": "workbench.view.scm"
     },
     {
@@ -240,7 +240,7 @@
         "command": "-workbench.view.scm"
     },
     {
-        "key": "alt+1 5",
+        "key": "alt+` 5",
         "command": "workbench.view.extensions"
     },
     {
@@ -248,7 +248,7 @@
         "command": "-workbench.view.extensions"
     },
     {
-        "key": "alt+1 1",
+        "key": "alt+` 1",
         "command": "workbench.view.explorer"
     },
     {
@@ -256,7 +256,7 @@
         "command": "-workbench.view.explorer"
     },
     {
-        "key": "shift+alt+`",
+        "key": "alt+` escape",
         "command": "workbench.action.togglePanel"
     },
     {
@@ -264,7 +264,7 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "alt+1 `",
+        "key": "alt+` `",
         "command": "workbench.action.toggleSidebarVisibility"
     },
     {
@@ -488,7 +488,7 @@
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "alt+` 1",
+        "key": "alt+` f1",
         "command": "workbench.actions.view.problems"
     },
     {
@@ -496,7 +496,7 @@
         "command": "-workbench.actions.view.problems"
     },
     {
-        "key": "alt+` 2",
+        "key": "alt+` f2",
         "command": "workbench.action.output.toggleOutput"
     },
     {
@@ -504,7 +504,7 @@
         "command": "-workbench.action.output.toggleOutput"
     },
     {
-        "key": "alt+` 3",
+        "key": "alt+` f3",
         "command": "workbench.debug.action.toggleRepl"
     },
     {
@@ -512,7 +512,7 @@
         "command": "-workbench.debug.action.toggleRepl"
     },
     {
-        "key": "alt+` 4",
+        "key": "alt+` f4",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
@@ -560,7 +560,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+` `",
+        "key": "alt+` tab",
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
