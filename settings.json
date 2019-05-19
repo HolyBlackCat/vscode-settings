@@ -104,6 +104,8 @@
 
         "close_param_hints_end" : ["closeParameterHints", "cursorEnd"],
         "close_suggestions_end" : ["hideSuggestWidget", "cursorEnd"],
+
+        "delete_brackets" : ["editor.action.selectToBracket", "deleteLeft"],
     },
     "files.associations": {
         "*.json": "jsonc",

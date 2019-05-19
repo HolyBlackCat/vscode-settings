@@ -23,6 +23,7 @@
     // * Misc
     {"key": "end", "command": "macros.close_param_hints_end", "when": "parameterHintsVisible && textInputFocus"},
     {"key": "end", "command": "macros.close_suggestions_end", "when": "suggestWidgetVisible && textInputFocus"},
+    {"key": "alt+backspace", "command": "macros.delete_brackets"},
 
     // The rest
     {
