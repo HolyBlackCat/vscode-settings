@@ -136,4 +136,5 @@
     "workbench.colorTheme": "Cat's Light",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
+    "search.usePCRE2": true,
 }
