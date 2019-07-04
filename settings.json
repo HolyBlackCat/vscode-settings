@@ -1,5 +1,22 @@
 {
-    "workbench.statusBar.feedback.visible": false,
+    // Font:
+    // https://github.com/HolyBlackCat/monokat-fonts
+    //
+    // Extensions:
+    // https://github.com/HolyBlackCat/vscode-better-tab
+    // C/C++
+    // https://github.com/HolyBlackCat/vscode-cats-cpp
+    // CMake
+    // Cursor Align
+    // Fold Plus
+    // https://github.com/HolyBlackCat/vscode-macros-fixed
+    // Markdown Preview Github Style
+    // Material Icon Theme
+    // Overtype
+    // Surround
+    // Task Runner
+    // vscode-clangd
+
     "workbench.activityBar.visible": false,
     "workbench.tree.indent": 12,
     "editor.fontFamily": "'Monokat 6x12', Consolas, 'Courier New', monospace",
@@ -137,4 +154,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "search.usePCRE2": true,
+    "explorer.confirmDragAndDrop": false,
+    "window.customMenuBarAltFocus": false,
+    "workbench.tree.renderIndentGuides": "always",
 }
