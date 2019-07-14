@@ -157,4 +157,5 @@
     "explorer.confirmDragAndDrop": false,
     "window.customMenuBarAltFocus": false,
     "workbench.tree.renderIndentGuides": "always",
+    "window.titleBarStyle": "custom",
 }
