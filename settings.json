@@ -47,6 +47,7 @@
     // "C_Cpp.errorSquiggles": "Disabled",
     "workbench.statusBar.visible": true,
     "git.path": "Z:\\Lander\\Unpacked Programs\\PortableGit\\bin\\git.exe",
+    "git.confirmSync": false,
     "grunt.autoDetect": "off",
     "gulp.autoDetect": "off",
     "jake.autoDetect": "off",
