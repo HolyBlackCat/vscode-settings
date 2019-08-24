@@ -175,4 +175,5 @@
     "gitlens.keymap": "none",
     "gitlens.defaultGravatarsStyle": "monsterid",
     "git-graph.showStatusBarItem": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 }
