@@ -15,7 +15,6 @@
     // Markdown Preview Github Style
     // Material Icon Theme
     // Overtype
-    // Surround
     // Task Runner
     // vscode-clangd
 
@@ -133,53 +132,7 @@
     "C_Cpp.intelliSenseEngine": "Disabled",
     "C_Cpp.clang_format_path": "Z:/Lander/msys2/mingw64/bin/clang-format.exe",
 
-    "surround.custom": {
-        "parens": {
-            "label": "()",
-            "description": "()",
-            "snippet": "($TM_SELECTED_TEXT)",
-        },
-        "braces": {
-            "label": "{}",
-            "description": "{}",
-            "snippet": "{$TM_SELECTED_TEXT}",
-        },
-        "brackets": {
-            "label": "[]",
-            "description": "[]",
-            "snippet": "[$TM_SELECTED_TEXT]",
-        },
-        "parens_lf": {
-            "label": "(lf)",
-            "description": "(lf)",
-            "snippet": "(\n$TM_SELECTED_TEXT\n)",
-        },
-        "braces_lf": {
-            "label": "{lf}",
-            "description": "{lf}",
-            "snippet": "{\n$TM_SELECTED_TEXT\n}",
-        },
-        "brackets_lf": {
-            "label": "[lf]",
-            "description": "[lf]",
-            "snippet": "[\n$TM_SELECTED_TEXT\n]",
-        },
-    },
-
     "macros": {
-        "surround_with_parens_l": ["surround.with.parens", "cursorLeft", "editor.action.jumpToBracket"],
-        "surround_with_parens_r": ["surround.with.parens"],
-        "surround_with_braces_l": ["surround.with.braces", "cursorLeft", "editor.action.jumpToBracket"],
-        "surround_with_braces_r": ["surround.with.braces"],
-        "surround_with_brackets_l": ["surround.with.brackets", "cursorLeft", "editor.action.jumpToBracket"],
-        "surround_with_brackets_r": ["surround.with.brackets"],
-        "surround_with_paren_block_l": ["surround.with.parens_lf", "cursorLeft", "editor.action.selectToBracket", "betterTab.indent", "cursorRight", "cursorLeft", "outdent", "editor.action.jumpToBracket", "outdent"],
-        "surround_with_paren_block_r": ["macros.surround_with_paren_block_l", "editor.action.jumpToBracket", "cursorRight"],
-        "surround_with_brace_block_l": ["surround.with.braces_lf", "cursorLeft", "editor.action.selectToBracket", "betterTab.indent", "cursorRight", "cursorLeft", "outdent", "editor.action.jumpToBracket", "outdent"],
-        "surround_with_brace_block_r": ["macros.surround_with_brace_block_l", "editor.action.jumpToBracket", "cursorRight"],
-        "surround_with_bracket_block_l": ["surround.with.brackets_lf", "cursorLeft", "editor.action.selectToBracket", "betterTab.indent", "cursorRight", "cursorLeft", "outdent", "editor.action.jumpToBracket", "outdent"],
-        "surround_with_bracket_block_r": ["macros.surround_with_bracket_block_l", "editor.action.jumpToBracket", "cursorRight"],
-
         "close_param_hints_end" : ["closeParameterHints", "cursorEnd"],
         "close_suggestions_end" : ["hideSuggestWidget", "cursorEnd"],
 

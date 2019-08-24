@@ -5,22 +5,26 @@
     {"key": "shift+alt+e",  "command": "workbench.action.tasks.runTask", "args": "Build"      },
     {"key": "ctrl+alt+e",   "command": "workbench.action.tasks.runTask", "args": "Run"        },
 
+    // Surround with
+    {"key":       "shift+9", "command": "editor.action.insertSnippet", "args": {"snippet": "$0($TM_SELECTED_TEXT)"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "shift+0", "command": "editor.action.insertSnippet", "args": {"snippet":   "($TM_SELECTED_TEXT)$0"}, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` shift+[", "command": "editor.action.insertSnippet", "args": {"snippet": "$0{$TM_SELECTED_TEXT}"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` shift+]", "command": "editor.action.insertSnippet", "args": {"snippet":   "{$TM_SELECTED_TEXT}$0"}, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "["      , "command": "editor.action.insertSnippet", "args": {"snippet": "$0[$TM_SELECTED_TEXT]"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "]"      , "command": "editor.action.insertSnippet", "args": {"snippet":   "[$TM_SELECTED_TEXT]$0"}, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "shift+,", "command": "editor.action.insertSnippet", "args": {"snippet": "$0<$TM_SELECTED_TEXT>"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "shift+.", "command": "editor.action.insertSnippet", "args": {"snippet":   "<$TM_SELECTED_TEXT>$0"}, "when": "editorTextFocus && editorHasSelection"},
+
+    {"key": "alt+` shift+9", "command": "editor.action.insertSnippet", "args": {"snippet": "$0(\n\t$TM_SELECTED_TEXT\n)"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` shift+0", "command": "editor.action.insertSnippet", "args": {"snippet":   "(\n\t$TM_SELECTED_TEXT\n)$0"}, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "shift+[", "command": "editor.action.insertSnippet", "args": {"snippet": "$0{\n\t$TM_SELECTED_TEXT\n}"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key":       "shift+]", "command": "editor.action.insertSnippet", "args": {"snippet":   "{\n\t$TM_SELECTED_TEXT\n}$0"}, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` ["      , "command": "editor.action.insertSnippet", "args": {"snippet": "$0[\n\t$TM_SELECTED_TEXT\n]"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` ]"      , "command": "editor.action.insertSnippet", "args": {"snippet":   "[\n\t$TM_SELECTED_TEXT\n]$0"}, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` shift+,", "command": "editor.action.insertSnippet", "args": {"snippet": "$0<\n\t$TM_SELECTED_TEXT\n>"  }, "when": "editorTextFocus && editorHasSelection"},
+    {"key": "alt+` shift+.", "command": "editor.action.insertSnippet", "args": {"snippet":   "<\n\t$TM_SELECTED_TEXT\n>$0"}, "when": "editorTextFocus && editorHasSelection"},
+
     // Macros
-    // * Surround simple
-    {"key": "alt+` shift+[", "command": "macros.surround_with_braces_l", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "alt+` shift+]", "command": "macros.surround_with_braces_r", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "shift+9", "command": "macros.surround_with_parens_l", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "shift+0", "command": "macros.surround_with_parens_r", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "[",       "command": "macros.surround_with_brackets_l", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "]",       "command": "macros.surround_with_brackets_r", "when": "editorTextFocus && editorHasSelection"},
-    // * Surround alt
-    {"key": "shift+[", "command": "macros.surround_with_brace_block_l", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "shift+]", "command": "macros.surround_with_brace_block_r", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "alt+` shift+9", "command": "macros.surround_with_paren_block_l", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "alt+` shift+0", "command": "macros.surround_with_paren_block_r", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "alt+` [",       "command": "macros.surround_with_bracket_block_l", "when": "editorTextFocus && editorHasSelection"},
-    {"key": "alt+` ]",       "command": "macros.surround_with_bracket_block_r", "when": "editorTextFocus && editorHasSelection"},
-    // * Misc
     {"key": "end", "command": "macros.close_param_hints_end", "when": "parameterHintsVisible && textInputFocus"},
     {"key": "end", "command": "macros.close_suggestions_end", "when": "suggestWidgetVisible && textInputFocus"},
     {"key": "alt+backspace", "command": "macros.delete_brackets"},
