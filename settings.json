@@ -68,8 +68,13 @@
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.scrollback": 3000,
-    "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\msys2_shell.cmd",
-    "terminal.integrated.shellArgs.windows": ["-defterm", "-no-start", "-here", "-mingw64", "-full-path"],
+    "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\usr\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": ["--login"],
+    "terminal.integrated.env.windows": {
+        "MSYSTEM": "MINGW64",
+        "MSYS2_PATH_TYPE": "inherit",
+        "CHERE_INVOKING": "yes",
+    },
 
     "files.associations": {
         "*.json": "jsonc",
