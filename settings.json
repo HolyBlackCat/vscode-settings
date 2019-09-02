@@ -4,7 +4,6 @@
     //
     // Extensions:
     // https://github.com/HolyBlackCat/vscode-better-tab
-    // C/C++
     // https://github.com/HolyBlackCat/vscode-cats-cpp
     // CMake
     // Cursor Align
@@ -14,6 +13,7 @@
     // https://github.com/HolyBlackCat/vscode-macros-fixed
     // Markdown Preview Github Style
     // Material Icon Theme
+    // Native Debug
     // Overtype
     // Task Runner
     // vscode-clangd
@@ -129,14 +129,14 @@
 
     "diffEditor.ignoreTrimWhitespace": false,
 
-    "C_Cpp.autoAddFileAssociations": false,
-    "C_Cpp.autocomplete": "Disabled",
-    "C_Cpp.configurationWarnings": "Disabled",
-    "C_Cpp.dimInactiveRegions": false,
-    "C_Cpp.errorSquiggles": "Disabled",
-    "C_Cpp.formatting": "Disabled",
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "C_Cpp.clang_format_path": "Z:/Lander/msys2/mingw64/bin/clang-format.exe",
+    // "C_Cpp.autoAddFileAssociations": false,
+    // "C_Cpp.autocomplete": "Disabled",
+    // "C_Cpp.configurationWarnings": "Disabled",
+    // "C_Cpp.dimInactiveRegions": false,
+    // "C_Cpp.errorSquiggles": "Disabled",
+    // "C_Cpp.formatting": "Disabled",
+    // "C_Cpp.intelliSenseEngine": "Disabled",
+    // "C_Cpp.clang_format_path": "Z:/Lander/msys2/mingw64/bin/clang-format.exe",
 
     "macros": {
         "close_param_hints_end" : ["closeParameterHints", "cursorEnd"],
