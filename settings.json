@@ -58,7 +58,6 @@
     "debug.console.fontSize": 12,
     "debug.console.lineHeight": 12,
     "debug.inlineValues": true,
-    "debug.openExplorerOnEnd": true,
     "debug.showInStatusBar": "never",
     "debug.toolBarLocation": "docked",
 
@@ -145,4 +144,5 @@
 
         "delete_brackets" : ["editor.action.selectToBracket", "deleteLeft"],
     },
+    "extensions.ignoreRecommendations": true,
 }
