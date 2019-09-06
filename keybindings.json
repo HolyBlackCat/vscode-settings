@@ -460,11 +460,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+t",
-        "command": "-surround.with",
-        "when": "editorHasSelection"
-    },
-    {
         "key": "ctrl+shift+b",
         "command": "editor.action.selectToBracket"
     },
@@ -585,5 +580,9 @@
         "key": "alt+a",
         "command": "-yo1dog.cursor-align.alignCursors",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+`",
+        "command": "workbench.action.focusActiveEditorGroup"
     },
 ]
