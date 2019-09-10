@@ -15,6 +15,7 @@
     // Native Debug
     // Overtype
     // Task Runner
+    // Toggle Header/Source
     // vscode-clangd
 
     "workbench.activityBar.visible": false,
