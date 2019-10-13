@@ -43,7 +43,7 @@
     "editor.renderControlCharacters": true,
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "none",
-    "editor.suggest.filteredTypes": {"keyword": false},
+    // "editor.suggest.filteredTypes": {"keyword": false},
     "editor.suggestSelection": "first",
     "editor.trimAutoWhitespace": false,
 
@@ -92,6 +92,7 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
+    "git-graph.showStatusBarItem": false,
     "gitlens.advanced.similarityThreshold": 90,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
@@ -105,7 +106,38 @@
     "gitlens.views.lineHistory.location": "scm",
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.search.location": "scm",
-    "git-graph.showStatusBarItem": false,
+    "gitlens.menus": {
+        "editor": false,
+        "editorGroup": {
+            "blame": true,
+            "compare": true
+        },
+        "editorTab": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": true
+        },
+        "explorer": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": true
+        },
+        "scmGroup": {
+            "compare": true,
+            "openClose": true,
+            "stash": true,
+            "stashInline": true
+        },
+        "scmItem": {
+            "clipboard": true,
+            "compare": true,
+            "history": true,
+            "remote": true,
+            "stash": true
+        }
+    },
 
     "grunt.autoDetect": "off",
     "gulp.autoDetect": "off",
@@ -144,5 +176,6 @@
 
         "delete_brackets" : ["editor.action.selectToBracket", "deleteLeft"],
     },
+
     "extensions.ignoreRecommendations": true,
 }
