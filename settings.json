@@ -178,4 +178,6 @@
     },
 
     "extensions.ignoreRecommendations": true,
+
+    // "clangd.path": "clangd-9",
 }
