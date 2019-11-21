@@ -180,4 +180,7 @@
     "extensions.ignoreRecommendations": true,
 
     // "clangd.path": "clangd-9",
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ],
 }
