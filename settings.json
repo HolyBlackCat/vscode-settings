@@ -139,9 +139,7 @@
         }
     },
 
-    "grunt.autoDetect": "off",
-    "gulp.autoDetect": "off",
-    "jake.autoDetect": "off",
+    "task.autoDetect": "off",
 
     "search.exclude": {
         "**/bower_components": false,
@@ -181,6 +179,8 @@
 
     // "clangd.path": "clangd-9",
     "clangd.arguments": [
-        "--header-insertion=never"
+        "--header-insertion=never",
+        "--clang-tidy",
     ],
+    "clangd.semanticHighlighting": false,
 }
