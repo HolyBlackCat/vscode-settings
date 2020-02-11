@@ -34,6 +34,7 @@
     "editor.autoSurround": "quotes",
     "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
+    "editor.foldingHighlight": false,
     "editor.fontFamily": "'Monocat 6x12', Consolas, 'Courier New', monospace",
     "editor.fontSize": 12,
     "editor.lineHeight": 12,
