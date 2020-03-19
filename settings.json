@@ -5,11 +5,12 @@
     // Extensions:
     // https://github.com/HolyBlackCat/vscode-better-tab
     // https://github.com/HolyBlackCat/vscode-cats-cpp
+    // https://github.com/HolyBlackCat/vscode-macros-fixed
     // CMake
     // Cursor Align
+    // Explicit Folding
     // Git Graph
     // GitLens
-    // https://github.com/HolyBlackCat/vscode-macros-fixed
     // Markdown Preview Github Styling
     // Material Icon Theme
     // Native Debug
@@ -187,4 +188,39 @@
         "--clang-tidy",
     ],
     "clangd.semanticHighlighting": false,
+
+    "folding": {
+        "c": [
+            { // Fold braces
+                "begin": "foo",
+                "end": "foo",
+            },
+            { // Fold braces
+                "begin": "{",
+                "end": "}",
+                "foldLastLine": false,
+            },
+            { // Fold preprocessor conditionals
+                "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
+                "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
+                "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
+            },
+        ],
+        "cpp": [
+            { // Fold braces
+                "begin": "foo",
+                "end": "foo",
+            },
+            { // Fold braces
+                "begin": "{",
+                "end": "}",
+                "foldLastLine": false,
+            },
+            { // Fold preprocessor conditionals
+                "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
+                "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
+                "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
+            },
+        ],
+    }
 }
