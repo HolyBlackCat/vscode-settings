@@ -191,32 +191,49 @@
 
     "folding": {
         "c": [
-            { // Fold braces
-                "begin": "foo",
-                "end": "foo",
-            },
-            { // Fold braces
+            { // {...}
                 "begin": "{",
                 "end": "}",
                 "foldLastLine": false,
             },
-            { // Fold preprocessor conditionals
+            { // (...)
+                "begin": "(",
+                "end": ")",
+                "foldLastLine": false,
+            },
+            { // [...]
+                "begin": "[",
+                "end": "]",
+                "foldLastLine": false,
+            },
+            { // Preprocessor conditionals
                 "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
                 "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
                 "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
             },
         ],
         "cpp": [
-            { // Fold braces
-                "begin": "foo",
-                "end": "foo",
+            { // Raw strings. This rule has to be placed above the `(...)` one.
+                "beginRegex": "\\b(?:L|u8|u|U)?R\"([^ ()\\\\\\t]{0,16})\\(",
+                "endRegex": "\\)\\1\"",
+                "foldLastLine": false,
             },
-            { // Fold braces
+            { // {...}
                 "begin": "{",
                 "end": "}",
                 "foldLastLine": false,
             },
-            { // Fold preprocessor conditionals
+            { // (...)
+                "begin": "(",
+                "end": ")",
+                "foldLastLine": false,
+            },
+            { // [...]
+                "begin": "[",
+                "end": "]",
+                "foldLastLine": false,
+            },
+            { // Preprocessor conditionals
                 "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
                 "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
                 "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
