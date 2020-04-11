@@ -24,6 +24,8 @@
     {"key": "alt+` shift+,", "command": "editor.action.insertSnippet", "args": {"snippet": "$0<\n\t$TM_SELECTED_TEXT\n>"  }, "when": "editorTextFocus && editorHasSelection"},
     {"key": "alt+` shift+.", "command": "editor.action.insertSnippet", "args": {"snippet":   "<\n\t$TM_SELECTED_TEXT\n>$0"}, "when": "editorTextFocus && editorHasSelection"},
 
+    {"key": "ctrl+shift+0", "command": "editor.action.insertSnippet", "args": {"snippet": "$TM_SELECTED_TEXT($TM_SELECTED_TEXT)"  }, "when": "editorTextFocus && editorHasSelection"},
+
     // Macros
     {"key": "end", "command": "macros.close_param_hints_end", "when": "parameterHintsVisible && textInputFocus"},
     {"key": "end", "command": "macros.close_suggestions_end", "when": "suggestWidgetVisible && textInputFocus"},

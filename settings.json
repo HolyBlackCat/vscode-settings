@@ -40,6 +40,7 @@
     "editor.fontFamily": "'Monocat 6x12', Consolas, 'Courier New', monospace",
     "editor.fontSize": 12,
     "editor.lineHeight": 12,
+    "editor.links": false,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.parameterHints.cycle": true,
@@ -47,10 +48,10 @@
     "editor.renderWhitespace": "none",
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "none",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.trimAutoWhitespace": false,
     "editor.unfoldOnClickAfterEndOfLine": true,
-    // "editor.suggest.filteredTypes": {"keyword": false},
 
     "window.autoDetectHighContrast": false,
     "window.customMenuBarAltFocus": false,
@@ -186,38 +187,54 @@
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
+        "--function-arg-placeholders=false"
     ],
     "clangd.semanticHighlighting": false,
 
     "folding": {
-        "c": [
-            { // {...}
-                "begin": "{",
-                "end": "}",
-                "foldLastLine": false,
-            },
-            { // (...)
-                "begin": "(",
-                "end": ")",
-                "foldLastLine": false,
-            },
-            { // [...]
-                "begin": "[",
-                "end": "]",
-                "foldLastLine": false,
-            },
-            { // Preprocessor conditionals
-                "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
-                "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
-                "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
-            },
-        ],
         "cpp": [
-            { // Raw strings. This rule has to be placed above the `(...)` one.
-                "beginRegex": "\\b(?:L|u8|u|U)?R\"([^ ()\\\\\\t]{0,16})\\(",
-                "endRegex": "\\)\\1\"",
+            // { // Raw strings. This rule has to be placed above the `(...)` one.
+            //     // Disabled because broken. Test case:
+            //     // { // Not folded!
+            //     //     ()""
+            //     // }
+            //     "beginRegex": "\\b(?:L|u8|u|U)?R\"([^ ()\\\\\\t]{0,16})\\(",
+            //     "endRegex": "\\)\\1\"",
+            //     "foldLastLine": false,
+            // },
+            { // {...}
+                "begin": "{",
+                "end": "}",
                 "foldLastLine": false,
             },
+            { // (...)
+                "begin": "(",
+                "end": ")",
+                "foldLastLine": false,
+            },
+            { // [...]
+                "begin": "[",
+                "end": "]",
+                "foldLastLine": false,
+            },
+            { // Preprocessor conditionals
+                "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
+                "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
+                "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
+            },
+            // { // Block comments
+            //     // "beginRegex": "^(?:(?:(?!\\/\\/)[^\"'])*?(?:\"(?:\\\\.|[^\"\\\\])*\")?(?:'(?:\\\\.|[^'\\\\])*')?)*?\\/\\*",
+            //     "beginRegex": "^(?:(?:[^\"'\\/]*(?:\\/(?:[^\"'\\/*][^\"'\\/]+))*)*(?:\"(?:\\\\.|[^\"\\\\])*\")?(?:'(?:\\\\.|[^'\\\\])*')?)*\\/\\*",
+            //     //              |  |                    ||       ^~~~~ ^~~~~~~~~     ||      ^~~~~ ^~~~~~~~     |
+            //     //              |  |                    ||  escape seq      char     || escape seq     char     |
+            //     //              |  |Eat everything until||Eat a string literal, if   ||Eat a char literal, if   |
+            //     //              |  |`"` or `//`.        ||present.                   ||present.                 |
+            //     //              |                                                                               |
+            //     //              |<- main loop ----------------------------------------------------------------->|
+            //     "endRegex": "\\*\\/",
+            // }
+        ],
+        "c": [ // Those are copies of some of the C++ rules.
             { // {...}
                 "begin": "{",
                 "end": "}",
@@ -239,5 +256,5 @@
                 "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
             },
         ],
-    }
+    },
 }
