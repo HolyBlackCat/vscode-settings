@@ -186,7 +186,7 @@
 
     "extensions.ignoreRecommendations": true,
 
-    // "clangd.path": "clangd-9",
+    // "clangd.path": "clangd-10",
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
