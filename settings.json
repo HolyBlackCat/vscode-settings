@@ -19,6 +19,8 @@
     // Toggle Header/Source
     // vscode-clangd
 
+    "telemetry.enableTelemetry": false,
+
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Cat's Light",
     "workbench.editor.highlightModifiedTabs": true,
@@ -97,6 +99,7 @@
     "git.allowForcePush": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.enableStatusBarSync": false,
     "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git-graph.showStatusBarItem": false,
     "gitlens.advanced.similarityThreshold": 90,
@@ -175,10 +178,11 @@
     // "C_Cpp.clang_format_path": "Z:/Lander/msys2/mingw64/bin/clang-format.exe",
 
     "macros": {
-        "close_param_hints_end" : ["closeParameterHints", "cursorEnd"],
-        "close_suggestions_end" : ["hideSuggestWidget", "cursorEnd"],
+        "close_param_hints_end": ["closeParameterHints", "cursorEnd"],
+        "close_suggestions_end": ["hideSuggestWidget", "cursorEnd"],
 
-        "delete_brackets" : ["editor.action.selectToBracket", "deleteLeft"],
+        "delete_brackets": ["editor.action.selectToBracket", "deleteLeft"],
+        "make_member_initializer": ["editor.action.addSelectionToNextFindMatch", {"command": "editor.action.insertSnippet", "args": {"snippet": "$TM_SELECTED_TEXT($TM_SELECTED_TEXT)"}}],
     },
 
     "extensions.ignoreRecommendations": true,

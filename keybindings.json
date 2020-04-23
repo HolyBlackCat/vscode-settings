@@ -24,12 +24,11 @@
     {"key": "alt+` shift+,", "command": "editor.action.insertSnippet", "args": {"snippet": "$0<\n\t$TM_SELECTED_TEXT\n>"  }, "when": "editorTextFocus && editorHasSelection"},
     {"key": "alt+` shift+.", "command": "editor.action.insertSnippet", "args": {"snippet":   "<\n\t$TM_SELECTED_TEXT\n>$0"}, "when": "editorTextFocus && editorHasSelection"},
 
-    {"key": "ctrl+shift+0", "command": "editor.action.insertSnippet", "args": {"snippet": "$TM_SELECTED_TEXT($TM_SELECTED_TEXT)"  }, "when": "editorTextFocus && editorHasSelection"},
-
     // Macros
     {"key": "end", "command": "macros.close_param_hints_end", "when": "parameterHintsVisible && textInputFocus"},
     {"key": "end", "command": "macros.close_suggestions_end", "when": "suggestWidgetVisible && textInputFocus"},
     {"key": "alt+backspace", "command": "macros.delete_brackets"},
+    {"key": "ctrl+shift+0", "command": "macros.make_member_initializer", "when": "editorTextFocus && !editorHasSelection"},
 
     // The rest
     { // Custom
@@ -121,16 +120,6 @@
     },
 
     { // Custom
-        "key": "alt+z",
-        "command": "workbench.action.terminal.toggleFindCaseSensitiveTerminalFocus",
-        "when": "terminalFocus"
-    },
-    { // Remove default shortcut
-        "key": "alt+c",
-        "command": "-workbench.action.terminal.toggleFindCaseSensitiveTerminalFocus",
-    },
-
-    { // Custom
         "key": "alt+x",
         "command": "toggleFindWholeWord",
         "when": "editorFocus"
@@ -161,16 +150,6 @@
     },
 
     { // Custom
-        "key": "alt+x",
-        "command": "workbench.action.terminal.toggleFindWholeWordTerminalFocus",
-        "when": "terminalFocus"
-    },
-    { // Remove default shortcut
-        "key": "alt+w",
-        "command": "-workbench.action.terminal.toggleFindWholeWordTerminalFocus",
-    },
-
-    { // Custom
         "key": "alt+c",
         "command": "toggleFindRegex",
         "when": "editorFocus"
@@ -198,16 +177,6 @@
     { // Remove default shortcut
         "key": "alt+r",
         "command": "-workbench.action.terminal.toggleFindRegex",
-    },
-
-    { // Custom
-        "key": "alt+c",
-        "command": "workbench.action.terminal.toggleFindRegexTerminalFocus",
-        "when": "terminalFocus"
-    },
-    { // Remove default shortcut
-        "key": "alt+r",
-        "command": "-workbench.action.terminal.toggleFindRegexTerminalFocus",
     },
 
     { // Custom
