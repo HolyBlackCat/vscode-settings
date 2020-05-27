@@ -197,15 +197,32 @@
 
     "folding": {
         "cpp": [
-            // { // Raw strings. This rule has to be placed above the `(...)` one.
-            //     // Disabled because broken. Test case:
-            //     // { // Not folded!
-            //     //     ()""
-            //     // }
-            //     "beginRegex": "\\b(?:L|u8|u|U)?R\"([^ ()\\\\\\t]{0,16})\\(",
-            //     "endRegex": "\\)\\1\"",
-            //     "foldLastLine": false,
-            // },
+            /* Known issues:
+             * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, in line comments, and everywhere else.
+             */
+            { // `//...` (not actually folded, but forces contents to be ignored)
+                "beginRegex": "(?!)",
+                "endRegex": "\\/\\/.*",
+            },
+            { // `/*...*/`
+                "begin": "/*",
+                "end": "*/",
+                "nested": false,
+            },
+            { // R"(...)" (C++ only)
+                "beginRegex": "\\b(?:L|u8|u|U|)R\"([^\\s\\(\\)\\\\]{0,16})\\(",
+                "endRegex": "\\)\\1\"",
+                "nested": false,
+                "foldLastLine": false,
+            },
+            { // "..." (not actually folded, but forces contents to be ignored)
+                "beginRegex": "(?!)",
+                "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
+            },
+            { // '...' (not actually folded, but forces contents to be ignored)
+                "beginRegex": "(?!)",
+                "endRegex": "'(?:[^'\\\\]|\\\\.)*'",
+            },
             { // {...}
                 "begin": "{",
                 "end": "}",
@@ -226,19 +243,28 @@
                 "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
                 "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
             },
-            // { // Block comments
-            //     // "beginRegex": "^(?:(?:(?!\\/\\/)[^\"'])*?(?:\"(?:\\\\.|[^\"\\\\])*\")?(?:'(?:\\\\.|[^'\\\\])*')?)*?\\/\\*",
-            //     "beginRegex": "^(?:(?:[^\"'\\/]*(?:\\/(?:[^\"'\\/*][^\"'\\/]+))*)*(?:\"(?:\\\\.|[^\"\\\\])*\")?(?:'(?:\\\\.|[^'\\\\])*')?)*\\/\\*",
-            //     //              |  |                    ||       ^~~~~ ^~~~~~~~~     ||      ^~~~~ ^~~~~~~~     |
-            //     //              |  |                    ||  escape seq      char     || escape seq     char     |
-            //     //              |  |Eat everything until||Eat a string literal, if   ||Eat a char literal, if   |
-            //     //              |  |`"` or `//`.        ||present.                   ||present.                 |
-            //     //              |                                                                               |
-            //     //              |<- main loop ----------------------------------------------------------------->|
-            //     "endRegex": "\\*\\/",
-            // }
         ],
         "c": [ // Those are copies of some of the C++ rules.
+            /* Known issues:
+             * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, in line comments, and everywhere else.
+             */
+            { // `//...` (not actually folded, but forces contents to be ignored)
+                "beginRegex": "(?!)",
+                "endRegex": "\\/\\/.*",
+            },
+            { // `/*...*/`
+                "begin": "/*",
+                "end": "*/",
+                "nested": false,
+            },
+            { // "..." (not actually folded, but forces contents to be ignored)
+                "beginRegex": "(?!)",
+                "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
+            },
+            { // '...' (not actually folded, but forces contents to be ignored)
+                "beginRegex": "(?!)",
+                "endRegex": "'(?:[^'\\\\]|\\\\.)*'",
+            },
             { // {...}
                 "begin": "{",
                 "end": "}",
