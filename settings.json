@@ -99,6 +99,7 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.enableStatusBarSync": false,
+    "git.githubAuthentication": false,
     "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git-graph.showStatusBarItem": false,
     "gitlens.advanced.similarityThreshold": 90,
