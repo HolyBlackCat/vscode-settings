@@ -23,6 +23,7 @@
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Cat's Light",
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.untitled.labelFormat": "name",
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "material-icon-theme",
