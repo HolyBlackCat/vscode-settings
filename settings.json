@@ -89,7 +89,8 @@
     },
     "files.autoSave": "off",
     "files.exclude": {
-        "obj/": true
+        "obj/": true,
+        ".cache/": true,
     },
     "files.hotExit": "off",
     "files.insertFinalNewline": true,
