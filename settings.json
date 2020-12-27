@@ -100,7 +100,7 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
 
-    // "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
+    "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git.enableStatusBarSync": false,
     "git.terminalAuthentication": false,
     "git-graph.showStatusBarItem": false,
@@ -190,7 +190,7 @@
 
     "extensions.ignoreRecommendations": true,
 
-    "clangd.path": "clangd-11",
+    // "clangd.path": "clangd-11",
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
