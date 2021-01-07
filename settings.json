@@ -198,6 +198,7 @@
         "--function-arg-placeholders=false"
     ],
     "clangd.semanticHighlighting": false,
+    "clangd.onConfigChanged": "restart",
 
     "folding": {
         "cpp": [
