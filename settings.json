@@ -163,7 +163,6 @@
     "explorer.autoReveal": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "explorer.sortOrder": "type",
 
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.folders.theme": "classic",
