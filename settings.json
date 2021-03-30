@@ -62,8 +62,7 @@
     "window.titleBarStyle": "custom",
 
     "debug.allowBreakpointsEverywhere": true,
-    "debug.console.fontFamily": "Monocat 6x12", // Temporary change, until single quotes start working again.
-    // "debug.console.fontFamily": "'Monocat 6x12', Consolas, 'Courier New', monospace",
+    "debug.console.fontFamily": "'Monocat 6x12', Consolas, 'Courier New', monospace",
     "debug.console.fontSize": 12,
     "debug.console.lineHeight": 12,
     "debug.inlineValues": true,
