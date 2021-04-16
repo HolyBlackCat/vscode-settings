@@ -613,4 +613,15 @@
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward"
     },
+
+    { // Custom
+        "key": "f4",
+        "command": "clangd.switchheadersource",
+        "when": "editorTextFocus"
+    },
+    { // Remove default shortcut (linux, windows NOT TESTED)
+        "key": "alt+o",
+        "command": "-clangd.switchheadersource",
+        "when": "editorTextFocus"
+    },
 ]
