@@ -3,19 +3,24 @@
     // https://github.com/HolyBlackCat/monocat-fonts
     //
     // Extensions:
-    // https://github.com/HolyBlackCat/vscode-better-tab
-    // https://github.com/HolyBlackCat/vscode-cats-cpp
-    // https://github.com/HolyBlackCat/vscode-macros-fixed
-    // clangd
-    // Cursor Align
-    // Explicit Folding
-    // Git Graph
-    // GitLens
-    // Markdown Preview Github Styling
-    // Material Icon Theme
-    // Native Debug
-    // Overtype
-    // Task Runner
+    // # Custom:
+    //     git clone https://github.com/HolyBlackCat/vscode-better-tab
+    //     code --install-extension vscode-better-tab/*.vsix
+    //     git clone https://github.com/HolyBlackCat/vscode-cats-cpp
+    //     code --install-extension vscode-cats-cpp/*.vsix
+    //     git clone https://github.com/HolyBlackCat/vscode-macros-fixed
+    //     code --install-extension vscode-macros-fixed/*.vsix
+    // # Store:
+    //     code --install-extension adammaras.overtype
+    //     code --install-extension bierner.markdown-preview-github-styles
+    //     code --install-extension eamodio.gitlens
+    //     code --install-extension llvm-vs-code-extensions.vscode-clangd
+    //     code --install-extension mhutchie.git-graph
+    //     code --install-extension pkief.material-icon-theme
+    //     code --install-extension sanaajani.taskrunnercode
+    //     code --install-extension webfreak.debug
+    //     code --install-extension yo1dog.cursor-align
+    //     code --install-extension zokugun.explicit-folding
 
     "telemetry.enableTelemetry": false,
 
