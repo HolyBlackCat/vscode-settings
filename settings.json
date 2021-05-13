@@ -72,7 +72,7 @@
     "debug.console.fontFamily": "'Monocat 6x12', Consolas, 'Courier New', monospace",
     "debug.console.fontSize": 12,
     "debug.console.lineHeight": 12,
-    "debug.inlineValues": true,
+    "debug.onTaskErrors": "abort",
     "debug.showInStatusBar": "never",
     "debug.toolBarLocation": "docked",
 
