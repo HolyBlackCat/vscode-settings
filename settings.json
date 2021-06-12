@@ -90,6 +90,8 @@
         "CHERE_INVOKING": "yes",
     },
 
+    "security.workspace.trust.enabled": false,
+
     "files.associations": {
         "*.json": "jsonc",
         "*.h": "cpp"
