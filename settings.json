@@ -112,7 +112,10 @@
 
     // "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git.enableStatusBarSync": false,
+    "git.pruneOnFetch": true,
     "git.terminalAuthentication": false,
+    "git-graph.repository.fetchAndPrune": true,
+    "git-graph.repository.fetchAndPruneTags": true,
     "git-graph.showStatusBarItem": false,
     "github.gitAuthentication": false,
     "gitlens.advanced.similarityThreshold": 90,
