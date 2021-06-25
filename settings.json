@@ -211,7 +211,7 @@
     "clangd.semanticHighlighting": false,
     "clangd.onConfigChanged": "restart",
 
-    "folding": {
+    "explicitFolding.rules": {
         "cpp": [
             /* Known hard-to-fix issues:
              * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, line comments, and everywhere else.
