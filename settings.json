@@ -227,7 +227,21 @@
                 "nested": false,
             },
             { // R"(...)" (C++ only)
-                "beginRegex": "\\b(?:L|u8|u|U|)R\"([^\\s\\(\\)\\\\]{0,16})\\(",
+                // Note that banning `\"` in the delimiter is formally wrong here, but it works around a bug in the extension.
+                // Test cases for the bug:
+                // 1.
+                //     "(
+                //
+                //     )" "(
+                //
+                //     )"
+                // 2.
+                //     "foo(
+                //
+                //     )foo" "bar(
+                //
+                //     )bar"
+                "beginRegex": "\\b(?:L|u8|u|U|)R\"([^\"\\s\\(\\)\\\\]{0,16})\\(",
                 "endRegex": "\\)\\1\"",
                 "nested": false,
                 "foldLastLine": false,
