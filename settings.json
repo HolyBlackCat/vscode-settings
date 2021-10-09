@@ -22,7 +22,7 @@
     //     code --install-extension yo1dog.cursor-align
     //     code --install-extension zokugun.explicit-folding
 
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
 
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Cat's Light",
@@ -202,7 +202,7 @@
 
     "extensions.ignoreRecommendations": true,
 
-    "clangd.path": "clangd-12",
+    "clangd.path": "clangd-13",
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
