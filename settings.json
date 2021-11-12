@@ -109,6 +109,7 @@
     "git.allowForcePush": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.showUnpublishedCommitsButton": "never",
 
     // "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git.enableStatusBarSync": false,
