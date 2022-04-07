@@ -49,6 +49,7 @@
     "editor.foldingHighlight": false,
     "editor.fontFamily": "'Monocat 7x14', 'Monocat 6x12', Consolas, 'Courier New', monospace",
     "editor.fontSize": 14,
+    "editor.inlayHints.enabled": false,
     "editor.lineHeight": 14,
     "editor.links": false,
     "editor.minimap.enabled": false,
@@ -56,7 +57,9 @@
     "editor.parameterHints.cycle": true,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
+    "editor.semanticHighlighting.enabled": false,
     "editor.showFoldingControls": "always",
+    "editor.showUnused": false,
     "editor.snippetSuggestions": "none",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
@@ -211,7 +214,6 @@
         "--clang-tidy",
         "--function-arg-placeholders=false"
     ],
-    "clangd.semanticHighlighting": false,
     "clangd.onConfigChanged": "restart",
 
     "explicitFolding.rules": {
