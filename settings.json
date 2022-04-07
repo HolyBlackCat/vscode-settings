@@ -205,7 +205,7 @@
 
     "extensions.ignoreRecommendations": true,
 
-    "clangd.path": "clangd-13",
+    "clangd.path": "clangd-14",
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
