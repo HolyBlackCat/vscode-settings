@@ -35,6 +35,7 @@
     "workbench.editor.untitled.labelFormat": "name",
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
     "workbench.list.horizontalScrolling": true,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "workbench.sideBar.location": "right",
