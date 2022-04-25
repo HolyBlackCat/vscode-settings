@@ -624,4 +624,15 @@
         "command": "-clangd.switchheadersource",
         "when": "editorTextFocus"
     },
+
+    { // Custom
+        "key": "ctrl+alt+z",
+        "command": "cursorUndo",
+        "when": "textInputFocus"
+    },
+    { // Remove default shortcut (linux, windows NOT TESTED)
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
 ]
