@@ -104,7 +104,6 @@
     },
     "files.autoSave": "off",
     "files.exclude": {
-        "obj/": true,
         ".cache/": true,
     },
     "files.hotExit": "off",
@@ -311,4 +310,5 @@
             },
         ],
     },
+    "editor.find.addExtraSpaceOnTop": false,
 }
