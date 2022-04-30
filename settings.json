@@ -18,6 +18,7 @@
     //     code --install-extension mhutchie.git-graph
     //     code --install-extension pkief.material-icon-theme
     //     code --install-extension sanaajani.taskrunnercode
+    //     code --install-extension vadimcn.vscode-lldb
     //     code --install-extension webfreak.debug
     //     code --install-extension yo1dog.cursor-align
     //     code --install-extension zokugun.explicit-folding
