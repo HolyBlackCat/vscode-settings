@@ -635,4 +635,15 @@
         "command": "-cursorUndo",
         "when": "textInputFocus"
     },
+
+    { // Custom.
+        "key": "f6",
+        "command": "editor.debug.action.runToCursor",
+        "when": "debugState == 'stopped'"
+    },
+    { // Remove default shortcut (linux, windows NOT TESTED)
+        "key": "f6",
+        "command": "-workbench.action.debug.pause",
+        "when": "debugState == 'running'"
+    },
 ]
