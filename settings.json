@@ -243,8 +243,9 @@
                 "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
             },
             { // '...' (not actually folded, but forces contents to be ignored)
+                // Note that we check that there's no digit before the first `'`, to support digit separators.
                 "beginRegex": "(?!)",
-                "endRegex": "'(?:[^'\\\\]|\\\\.)*'",
+                "endRegex": "(?<![0-9])'(?:[^'\\\\]|\\\\.)*'",
             },
             { // {...}
                 "begin": "{",
