@@ -46,12 +46,14 @@
 
     "editor.accessibilitySupport": "off",
     "editor.autoSurround": "quotes",
+    "editor.bracketPairColorization.enabled": false,
     "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
+    "editor.find.addExtraSpaceOnTop": false,
     "editor.foldingHighlight": false,
     "editor.fontFamily": "'Monocat 7x14', 'Monocat 6x12', Consolas, 'Courier New', monospace",
     "editor.fontSize": 14,
-    "editor.inlayHints.enabled": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.lineHeight": 14,
     "editor.links": false,
     "editor.minimap.enabled": false,
@@ -171,6 +173,11 @@
         }
     },
 
+    "scm.diffDecorationsGutterPattern":{
+        "added": false,
+        "modified": false,
+    },
+
     "task.autoDetect": "off",
 
     "search.exclude": {
@@ -181,6 +188,11 @@
     "explorer.autoReveal": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    // "explorer.fileNesting.enabled": true,
+    // "explorer.fileNesting.patterns": {
+    //     "*.h": "${capture}.c, ${capture}.cpp, ${capture}.cc, ${capture}.inl",
+    //     "*.hpp": "${capture}.cpp, ${capture}.cc, ${capture}.inl",
+    // },
 
     "material-icon-theme.activeIconPack": "none",
     "material-icon-theme.folders.theme": "classic",
@@ -312,5 +324,4 @@
             },
         ],
     },
-    "editor.find.addExtraSpaceOnTop": false,
 }
