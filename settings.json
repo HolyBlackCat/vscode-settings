@@ -128,6 +128,7 @@
     "git-graph.showStatusBarItem": false,
     "github.gitAuthentication": false,
     "gitlens.advanced.similarityThreshold": 90,
+    "gitlens.blame.format": "${author|25?}:  ${message|40?} ${agoOrDate|14-}",
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.defaultGravatarsStyle": "monsterid",
