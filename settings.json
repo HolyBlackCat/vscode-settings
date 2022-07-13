@@ -121,7 +121,13 @@
 
     // "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git.enableStatusBarSync": false,
+    "git.mergeEditor": true,
     "git.pruneOnFetch": true,
+    "git.showActionButton": {
+        "commit": false,
+        "publish": false,
+        "sync": false
+    },
     "git.terminalAuthentication": false,
     "git-graph.repository.fetchAndPrune": true,
     "git-graph.repository.fetchAndPruneTags": true,
@@ -229,6 +235,12 @@
         "--function-arg-placeholders=false"
     ],
     "clangd.onConfigChanged": "restart",
+    "clangd.fallbackFlags": [
+        "-std=c++2b",
+        "-Wall",
+        "-Wextra",
+        "-pedantic-errors"
+    ],
 
     "explicitFolding.rules": {
         "cpp": [
