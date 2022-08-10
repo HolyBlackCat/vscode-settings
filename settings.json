@@ -91,13 +91,13 @@
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.scrollback": 3000,
-    "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\usr\\bin\\bash.exe",
-    "terminal.integrated.shellArgs.windows": ["--login", "-i"],
-    "terminal.integrated.env.windows": {
-        "MSYSTEM": "MINGW64",
-        "MSYS2_PATH_TYPE": "inherit",
-        "CHERE_INVOKING": "yes",
-    },
+    // "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\usr\\bin\\bash.exe",
+    // "terminal.integrated.shellArgs.windows": ["--login", "-i"],
+    // "terminal.integrated.env.windows": {
+    //     "MSYSTEM": "MINGW64",
+    //     "MSYS2_PATH_TYPE": "inherit",
+    //     "CHERE_INVOKING": "yes",
+    // },
 
     "security.workspace.trust.enabled": false,
 
