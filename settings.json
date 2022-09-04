@@ -141,6 +141,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.hovers.enabled": false,
     "gitlens.keymap": "none",
+    "gitlens.plusFeatures.enabled": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.views.compare.location": "scm",
     "gitlens.views.fileHistory.location": "scm",
