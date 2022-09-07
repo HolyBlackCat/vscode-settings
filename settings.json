@@ -65,6 +65,7 @@
     "editor.showFoldingControls": "always",
     "editor.showUnused": false,
     "editor.snippetSuggestions": "none",
+    "editor.stickyScroll.enabled": true,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.trimAutoWhitespace": false,
