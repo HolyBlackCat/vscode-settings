@@ -197,6 +197,7 @@
     "explorer.autoReveal": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "explorer.incrementalNaming": "disabled",
     // "explorer.fileNesting.enabled": true,
     // "explorer.fileNesting.patterns": {
     //     "*.h": "${capture}.c, ${capture}.cpp, ${capture}.cc, ${capture}.inl",
