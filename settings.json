@@ -87,7 +87,6 @@
 
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.enableBell": true,
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeightBold": "normal",
