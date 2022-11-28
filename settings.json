@@ -230,6 +230,8 @@
 
     "extensions.ignoreRecommendations": true,
 
+    "markdown.validate.enabled": true,
+
     "clangd.path": "clangd-15",
     "clangd.arguments": [
         "--header-insertion=never",
