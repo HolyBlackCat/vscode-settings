@@ -390,6 +390,10 @@
         "key": "shift+alt+d",
         "command": "editor.action.revealDeclaration"
     },
+    { // Remove competing shortcut (linux, windows NOT TESTED)
+        "key": "shift+alt+d",
+        "command": "-editor.detectLanguage",
+    },
 
     { // Custom
         "key": "alt+r",
@@ -414,6 +418,16 @@
         "key": "shift+alt+r",
         "command": "-revealFileInOS",
         "when": "!editorFocus"
+    },
+
+    { // Custom
+        "key": "shift+alt+a",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    { // Remove default shortcut (linux, windows NOT TESTED)
+        "key": "ctrl+shift+a",
+        "command": "-editor.action.blockComment",
     },
 
     { // Custom
@@ -562,7 +576,6 @@
     { // Remove competing shortcut
         "key": "ctrl+shift+up",
         "command": "-cursorUpSelect",
-        "when": "textInputFocus"
     },
 
     { // Custom
@@ -588,7 +601,6 @@
     { // Remove default shortcut
         "key": "alt+a",
         "command": "-yo1dog.cursor-align.alignCursors",
-        "when": "editorTextFocus"
     },
 
     { // Custom
@@ -622,7 +634,6 @@
     { // Remove default shortcut (linux, windows NOT TESTED)
         "key": "alt+o",
         "command": "-clangd.switchheadersource",
-        "when": "editorTextFocus"
     },
 
     { // Custom
@@ -633,7 +644,6 @@
     { // Remove default shortcut (linux, windows NOT TESTED)
         "key": "ctrl+u",
         "command": "-cursorUndo",
-        "when": "textInputFocus"
     },
 
     { // Custom.
@@ -641,9 +651,8 @@
         "command": "editor.debug.action.runToCursor",
         "when": "debugState == 'stopped'"
     },
-    { // Remove default shortcut (linux, windows NOT TESTED)
+    { // Remove competing shortcut (linux, windows NOT TESTED)
         "key": "f6",
         "command": "-workbench.action.debug.pause",
-        "when": "debugState == 'running'"
     },
 ]
