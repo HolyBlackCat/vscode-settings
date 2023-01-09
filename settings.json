@@ -58,6 +58,7 @@
     "editor.links": false,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
+    "editor.multiCursorPaste": "full",
     "editor.parameterHints.cycle": true,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
