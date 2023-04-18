@@ -233,7 +233,7 @@
 
     "markdown.validate.enabled": true,
 
-    "clangd.path": "clangd-15",
+    "clangd.path": "clangd-16",
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
