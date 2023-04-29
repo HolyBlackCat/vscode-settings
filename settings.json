@@ -11,8 +11,8 @@
     //     git clone https://github.com/HolyBlackCat/vscode-macros-fixed
     //     code --install-extension vscode-macros-fixed/*.vsix
     // # Store:
-    //     code --install-extension adammaras.overtype
     //     code --install-extension bierner.markdown-preview-github-styles
+    //     code --install-extension DrMerfy.overtype
     //     code --install-extension eamodio.gitlens
     //     code --install-extension llvm-vs-code-extensions.vscode-clangd
     //     code --install-extension mhutchie.git-graph
