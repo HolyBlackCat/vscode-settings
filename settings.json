@@ -233,7 +233,7 @@
 
     "markdown.validate.enabled": true,
 
-    "clangd.path": "clangd-16",
+    "clangd.path": "clangd",
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
@@ -342,4 +342,5 @@
             },
         ],
     },
+    "git.openRepositoryInParentFolders": "never",
 }
