@@ -112,6 +112,9 @@
     },
     "files.hotExit": "off",
     "files.insertFinalNewline": true,
+    "files.readonlyInclude": {
+        "/usr/**": true
+    },
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
 
@@ -123,6 +126,7 @@
     // "git.path": "Z:\\Lander\\InstalledPrograms\\Git\\bin\\git.exe",
     "git.enableStatusBarSync": false,
     "git.mergeEditor": true,
+    "git.openRepositoryInParentFolders": "never",
     "git.pruneOnFetch": true,
     "git.showActionButton": {
         "commit": false,
@@ -342,5 +346,4 @@
             },
         ],
     },
-    "git.openRepositoryInParentFolders": "never",
 }
