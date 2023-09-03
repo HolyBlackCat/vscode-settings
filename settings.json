@@ -246,10 +246,16 @@
     "clangd.onConfigChanged": "restart",
     "clangd.fallbackFlags": [
         "-std=c++2b",
+        "-pedantic-errors",
         "-Wall",
         "-Wextra",
-        "-pedantic-errors"
+        "-Wdeprecated",
     ],
+
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "evaluate",
 
     "explicitFolding.rules": {
         "cpp": [
