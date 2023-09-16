@@ -73,6 +73,7 @@
     "editor.unfoldOnClickAfterEndOfLine": true,
 
     "window.autoDetectHighContrast": false,
+    "window.commandCenter": false,
     "window.customMenuBarAltFocus": false,
     "window.menuBarVisibility": "visible",
     "window.restoreWindows": "none",
