@@ -5,10 +5,10 @@
     // Extensions:
     // # Custom:
     //     git clone https://github.com/HolyBlackCat/vscode-better-tab
-    //     code --install-extension vscode-better-tab/*.vsix
     //     git clone https://github.com/HolyBlackCat/vscode-cats-cpp
-    //     code --install-extension vscode-cats-cpp/*.vsix
     //     git clone https://github.com/HolyBlackCat/vscode-macros-fixed
+    //     code --install-extension vscode-better-tab/*.vsix
+    //     code --install-extension vscode-cats-cpp/*.vsix
     //     code --install-extension vscode-macros-fixed/*.vsix
     // # Store:
     //     code --install-extension bierner.markdown-preview-github-styles
@@ -25,14 +25,14 @@
 
     "telemetry.telemetryLevel": "off",
 
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Cat's Light",
     "workbench.editor.decorations.badges": false,
     "workbench.editor.decorations.colors": false,
+    "workbench.editor.empty.hint": "hidden",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.languageDetection": false,
     "workbench.editor.pinnedTabSizing": "compact",
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.untitled.labelFormat": "name",
     "workbench.enableExperiments": false,
     "workbench.iconTheme": "material-icon-theme",
@@ -47,6 +47,7 @@
     "editor.accessibilitySupport": "off",
     "editor.autoSurround": "quotes",
     "editor.bracketPairColorization.enabled": false,
+    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
     "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
     "editor.find.addExtraSpaceOnTop": false,
