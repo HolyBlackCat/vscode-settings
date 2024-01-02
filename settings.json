@@ -26,6 +26,7 @@
     "telemetry.telemetryLevel": "off",
 
     "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Clean C++ Light",
     "workbench.editor.decorations.badges": false,
     "workbench.editor.decorations.colors": false,
     "workbench.editor.empty.hint": "hidden",
@@ -355,5 +356,4 @@
             },
         ],
     },
-    "workbench.colorTheme": "Clean C++ Light",
 }
