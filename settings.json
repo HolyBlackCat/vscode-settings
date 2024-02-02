@@ -157,6 +157,7 @@
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.search.location": "scm",
     "gitlens.menus": {
+        "scmRepositoryInline": { "graph": false },
         "editor": false,
         "editorGroup": {
             "blame": true,
