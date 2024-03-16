@@ -290,7 +290,7 @@
             { // '...' (not actually folded, but forces contents to be ignored)
                 // Note that we check that there's no digit before the first `'`, to support digit separators.
                 "beginRegex": "(?!)",
-                "endRegex": "(?<![0-9])'(?:[^'\\\\]|\\\\.)*'",
+                "endRegex": "(?:(?<=u8)|(?<![0-9]))'(?:[^'\\\\]|\\\\.)*'",
             },
             { // {...}
                 "begin": "{",
