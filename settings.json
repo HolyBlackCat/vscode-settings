@@ -1,7 +1,4 @@
 {
-    // Font:
-    // https://github.com/HolyBlackCat/monocat-fonts
-    //
     // Extensions:
     // # Custom:
     //     git clone https://github.com/HolyBlackCat/vscode-better-tab
@@ -18,10 +15,21 @@
     //     code --install-extension mhutchie.git-graph
     //     code --install-extension pkief.material-icon-theme
     //     code --install-extension sanaajani.taskrunnercode
-    //     code --install-extension vadimcn.vscode-lldb
-    //     code --install-extension webfreak.debug
     //     code --install-extension yo1dog.cursor-align
     //     code --install-extension zokugun.explicit-folding
+    // # Optional debugging extensions: (prefer lldb-dap)
+    //     code --install-extension vadimcn.vscode-lldb
+    //     code --install-extension webfreak.debug
+    //
+    // # Building LLDB-DAP:
+    //   * Clone https://github.com/llvm/llvm-project
+    //   * Checkout the latest stable branch; you can list the branches using: git tag | grep -P '^llvmorg-.*(?<!init)$' | sort -t- -n -k2
+    //   * sudo pacman -S node npm
+    //   * npm install
+    //   * Probably not needed: sudo npm install -g vsce
+    //   * npm run package
+    //   * If already installed, uninstall old version and purge the directory from `~/.vscode/extensions`.
+    //   * Install into VSC: npm run vscode-install
 
     "telemetry.telemetryLevel": "off",
 
@@ -227,7 +235,6 @@
     // "C_Cpp.errorSquiggles": "Disabled",
     // "C_Cpp.formatting": "Disabled",
     // "C_Cpp.intelliSenseEngine": "Disabled",
-    // "C_Cpp.clang_format_path": "Z:/Lander/msys2/mingw64/bin/clang-format.exe",
 
     "macros": {
         "close_param_hints_end": ["closeParameterHints", "cursorEnd"],
@@ -254,13 +261,16 @@
         "-Wall",
         "-Wextra",
         "-Wdeprecated",
+        "-Wextra-semi",
     ],
 
-    "lldb.displayFormat": "auto",
-    "lldb.showDisassembly": "auto",
-    "lldb.dereferencePointers": true,
+    "lldb-dap.executable-path": "lldb-dap",
+
     "lldb.consoleMode": "evaluate",
+    "lldb.dereferencePointers": true,
+    "lldb.displayFormat": "auto",
     "lldb.launch.expressions": "native",
+    "lldb.showDisassembly": "auto",
 
     "explicitFolding.rules": {
         "cpp": [
