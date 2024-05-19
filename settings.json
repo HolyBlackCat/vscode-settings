@@ -1,11 +1,10 @@
 {
     // Extensions:
     // # Custom:
+    //     code --install-extension holyblackcat.cats-cpp  # Source code: git clone https://github.com/HolyBlackCat/vscode-cats-cpp
     //     git clone https://github.com/HolyBlackCat/vscode-better-tab
-    //     git clone https://github.com/HolyBlackCat/vscode-cats-cpp
     //     git clone https://github.com/HolyBlackCat/vscode-macros-fixed
     //     code --install-extension vscode-better-tab/*.vsix
-    //     code --install-extension vscode-cats-cpp/*.vsix
     //     code --install-extension vscode-macros-fixed/*.vsix
     // # Store:
     //     code --install-extension bierner.markdown-preview-github-styles
