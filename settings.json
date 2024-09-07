@@ -75,6 +75,7 @@
     "editor.showUnused": false,
     "editor.snippetSuggestions": "none",
     "editor.stickyScroll.enabled": true,
+    "editor.suggest.showKeywords": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.trimAutoWhitespace": false,
@@ -83,6 +84,7 @@
     "window.autoDetectHighContrast": false,
     "window.commandCenter": false,
     "window.customMenuBarAltFocus": false,
+    "window.experimentalControlOverlay": false,
     "window.menuBarVisibility": "visible",
     "window.restoreWindows": "none",
     "window.titleBarStyle": "custom",
@@ -100,7 +102,8 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeightBold": "normal",
-    "terminal.integrated.scrollback": 3000,
+    "terminal.integrated.scrollback": 5000,
+    // "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
     // "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\usr\\bin\\bash.exe",
     // "terminal.integrated.shellArgs.windows": ["--login", "-i"],
     // "terminal.integrated.env.windows": {
@@ -156,6 +159,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.hovers.enabled": false,
     "gitlens.keymap": "none",
+    "gitlens.launchpad.indicator.enabled": false,
     "gitlens.plusFeatures.enabled": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.views.compare.location": "scm",
@@ -210,6 +214,7 @@
     },
 
     "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.incrementalNaming": "disabled",
@@ -233,7 +238,7 @@
     // "C_Cpp.dimInactiveRegions": false,
     // "C_Cpp.errorSquiggles": "Disabled",
     // "C_Cpp.formatting": "Disabled",
-    // "C_Cpp.intelliSenseEngine": "Disabled",
+    // "C_Cpp.intelliSenseEngine": "disabled",
 
     "macros": {
         "close_param_hints_end": ["closeParameterHints", "cursorEnd"],
