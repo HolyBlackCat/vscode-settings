@@ -216,7 +216,8 @@
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "explorer.incrementalNaming": "disabled",
+    "explorer.confirmPasteNative": false,
+    "explorer.incrementalNaming": "simple",
     // "explorer.fileNesting.enabled": true,
     // "explorer.fileNesting.patterns": {
     //     "*.h": "${capture}.c, ${capture}.cpp, ${capture}.cc, ${capture}.inl",
