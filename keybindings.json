@@ -28,7 +28,8 @@
     {"key": "end", "command": "macros.close_param_hints_end", "when": "parameterHintsVisible && textInputFocus"},
     {"key": "end", "command": "macros.close_suggestions_end", "when": "suggestWidgetVisible && textInputFocus"},
     {"key": "alt+backspace", "command": "macros.delete_brackets"},
-    {"key": "ctrl+shift+0", "command": "macros.make_member_initializer", "when": "editorTextFocus && !editorHasSelection"},
+    {"key": "ctrl+shift+0", "command": "macros.make_member_initializer_move", "when": "editorTextFocus && !editorHasSelection"},
+    {"key": "ctrl+shift+alt+0", "command": "macros.make_member_initializer", "when": "editorTextFocus && !editorHasSelection"},
     {"key": "alt+\\", "command": "editor.action.insertSnippet", "args": {"snippet": "${0: $TM_SELECTED_TEXT }"}, "when": "editorTextFocus && editorHasSelection"},
     {"key": "alt+\\", "command": "editor.action.insertSnippet", "args": {"snippet": " $0 "                    }, "when": "editorTextFocus && !editorHasSelection"},
 

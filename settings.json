@@ -246,6 +246,7 @@
 
         "delete_brackets": ["editor.action.selectToBracket", "deleteLeft"],
         "make_member_initializer": ["editor.action.addSelectionToNextFindMatch", {"command": "editor.action.insertSnippet", "args": {"snippet": "$TM_SELECTED_TEXT($TM_SELECTED_TEXT)"}}],
+        "make_member_initializer_move": ["editor.action.addSelectionToNextFindMatch", {"command": "editor.action.insertSnippet", "args": {"snippet": "$TM_SELECTED_TEXT(std::move($TM_SELECTED_TEXT))"}}],
     },
 
     "extensions.ignoreRecommendations": true,
