@@ -101,7 +101,7 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeightBold": "normal",
-    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.scrollback": 50000,
     // "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
     // "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\usr\\bin\\bash.exe",
     // "terminal.integrated.shellArgs.windows": ["--login", "-i"],
