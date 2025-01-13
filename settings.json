@@ -166,6 +166,18 @@
     "gitlens.views.lineHistory.location": "scm",
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.search.location": "scm",
+    "gitlens.views.scm.grouped.views": {
+        "commits": false,
+        "branches": false,
+        "remotes": false,
+        "stashes": false,
+        "tags": false,
+        "worktrees": false,
+        "contributors": false,
+        "repositories": false,
+        "searchAndCompare": false,
+        "launchpad": false
+    },
     "gitlens.menus": {
         "scmRepositoryInline": { "graph": false },
         "editor": false,
