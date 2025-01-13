@@ -259,6 +259,7 @@
         "--clang-tidy",
         "--function-arg-placeholders=false"
     ],
+    "clangd.inactiveRegions.opacity": 0.7,
     "clangd.onConfigChanged": "restart",
     "clangd.fallbackFlags": [
         "-std=c++23",
