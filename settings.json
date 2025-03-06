@@ -31,6 +31,10 @@
 
     "telemetry.telemetryLevel": "off",
 
+    "[c][cpp]": {
+        "editor.autoIndent": "keep",
+    },
+
     "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Clean C++ Light",
     "workbench.editor.decorations.badges": false,
@@ -98,6 +102,7 @@
 
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeightBold": "normal",
@@ -282,13 +287,15 @@
         "-Wextra-semi",
     ],
 
-    "lldb-dap.executable-path": "lldb-dap",
+    "lldb-dap.executable-path": "/usr/bin/lldb-dap",
 
     "lldb.consoleMode": "evaluate",
     "lldb.dereferencePointers": true,
     "lldb.displayFormat": "auto",
     "lldb.launch.expressions": "native",
     "lldb.showDisassembly": "auto",
+
+    "chat.commandCenter.enabled": false,
 
     "explicitFolding.rules": {
         "cpp": [
