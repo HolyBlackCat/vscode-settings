@@ -58,7 +58,6 @@
     "editor.accessibilitySupport": "off",
     "editor.autoSurround": "quotes",
     "editor.bracketPairColorization.enabled": false,
-    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
     "editor.detectIndentation": false,
     "editor.emptySelectionClipboard": false,
     "editor.find.addExtraSpaceOnTop": false,
@@ -300,99 +299,100 @@
 
     "chat.commandCenter.enabled": false,
 
-    "explicitFolding.rules": {
-        "cpp": [
-            /* Known hard-to-fix issues:
-             * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, line comments, and everywhere else.
-             * - Unbalanced brackets after `#define` should be ignored, but they aren't.
-             */
-            { // `//...` (not actually folded, but forces contents to be ignored)
-                "beginRegex": "(?!)",
-                "endRegex": "\\/\\/.*",
-            },
-            { // `/*...*/`
-                "begin": "/*",
-                "end": "*/",
-                "nested": false,
-            },
-            { // R"(...)" (C++ only)
-                "beginRegex": "\\b(?:L|u8|u|U|)R\"([^\\s\\(\\)\\\\]{0,16})\\(",
-                "endRegex": "\\)\\1\"",
-                "nested": false,
-                "foldLastLine": false,
-            },
-            { // "..." (not actually folded, but forces contents to be ignored)
-                "beginRegex": "(?!)",
-                "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
-            },
-            { // '...' (not actually folded, but forces contents to be ignored)
-                // Note that we check that there's no digit before the first `'`, to support digit separators.
-                "beginRegex": "(?!)",
-                "endRegex": "(?:(?<=u8)|(?<![0-9]))'(?:[^'\\\\]|\\\\.)*'",
-            },
-            { // {...}
-                "begin": "{",
-                "end": "}",
-                "foldLastLine": false,
-            },
-            { // (...)
-                "begin": "(",
-                "end": ")",
-                "foldLastLine": false,
-            },
-            { // [...]
-                "begin": "[",
-                "end": "]",
-                "foldLastLine": false,
-            },
-            { // Preprocessor conditionals
-                "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
-                "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
-                "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
-            },
-        ],
-        "c": [ // Those are copies of some of the C++ rules.
-            /* Known issues:
-             * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, line comments, and everywhere else.
-             * - Unbalanced brackets after `#define` should be ignored, but they aren't.
-             */
-            { // `//...` (not actually folded, but forces contents to be ignored)
-                "beginRegex": "(?!)",
-                "endRegex": "\\/\\/.*",
-            },
-            { // `/*...*/`
-                "begin": "/*",
-                "end": "*/",
-                "nested": false,
-            },
-            { // "..." (not actually folded, but forces contents to be ignored)
-                "beginRegex": "(?!)",
-                "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
-            },
-            { // '...' (not actually folded, but forces contents to be ignored)
-                "beginRegex": "(?!)",
-                "endRegex": "'(?:[^'\\\\]|\\\\.)*'",
-            },
-            { // {...}
-                "begin": "{",
-                "end": "}",
-                "foldLastLine": false,
-            },
-            { // (...)
-                "begin": "(",
-                "end": ")",
-                "foldLastLine": false,
-            },
-            { // [...]
-                "begin": "[",
-                "end": "]",
-                "foldLastLine": false,
-            },
-            { // Preprocessor conditionals
-                "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
-                "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
-                "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
-            },
-        ],
-    },
+    // The old manual C/C++ folding rules. No longer needed because Clangd now handles folding by itself.
+    // "explicitFolding.rules": {
+    //     "cpp": [
+    //         /* Known hard-to-fix issues:
+    //          * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, line comments, and everywhere else.
+    //          * - Unbalanced brackets after `#define` should be ignored, but they aren't.
+    //          */
+    //         { // `//...` (not actually folded, but forces contents to be ignored)
+    //             "beginRegex": "(?!)",
+    //             "endRegex": "\\/\\/.*",
+    //         },
+    //         { // `/*...*/`
+    //             "begin": "/*",
+    //             "end": "*/",
+    //             "nested": false,
+    //         },
+    //         { // R"(...)" (C++ only)
+    //             "beginRegex": "\\b(?:L|u8|u|U|)R\"([^\\s\\(\\)\\\\]{0,16})\\(",
+    //             "endRegex": "\\)\\1\"",
+    //             "nested": false,
+    //             "foldLastLine": false,
+    //         },
+    //         { // "..." (not actually folded, but forces contents to be ignored)
+    //             "beginRegex": "(?!)",
+    //             "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
+    //         },
+    //         { // '...' (not actually folded, but forces contents to be ignored)
+    //             // Note that we check that there's no digit before the first `'`, to support digit separators.
+    //             "beginRegex": "(?!)",
+    //             "endRegex": "(?:(?<=u8)|(?<![0-9]))'(?:[^'\\\\]|\\\\.)*'",
+    //         },
+    //         { // {...}
+    //             "begin": "{",
+    //             "end": "}",
+    //             "foldLastLine": false,
+    //         },
+    //         { // (...)
+    //             "begin": "(",
+    //             "end": ")",
+    //             "foldLastLine": false,
+    //         },
+    //         { // [...]
+    //             "begin": "[",
+    //             "end": "]",
+    //             "foldLastLine": false,
+    //         },
+    //         { // Preprocessor conditionals
+    //             "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
+    //             "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
+    //             "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
+    //         },
+    //     ],
+    //     "c": [ // Those are copies of some of the C++ rules.
+    //         /* Known issues:
+    //          * - Line continuation ('\' at the end of line) is not handled correctly in string and character literals, line comments, and everywhere else.
+    //          * - Unbalanced brackets after `#define` should be ignored, but they aren't.
+    //          */
+    //         { // `//...` (not actually folded, but forces contents to be ignored)
+    //             "beginRegex": "(?!)",
+    //             "endRegex": "\\/\\/.*",
+    //         },
+    //         { // `/*...*/`
+    //             "begin": "/*",
+    //             "end": "*/",
+    //             "nested": false,
+    //         },
+    //         { // "..." (not actually folded, but forces contents to be ignored)
+    //             "beginRegex": "(?!)",
+    //             "endRegex": "\"(?:[^\"\\\\]|\\\\.)*\"",
+    //         },
+    //         { // '...' (not actually folded, but forces contents to be ignored)
+    //             "beginRegex": "(?!)",
+    //             "endRegex": "'(?:[^'\\\\]|\\\\.)*'",
+    //         },
+    //         { // {...}
+    //             "begin": "{",
+    //             "end": "}",
+    //             "foldLastLine": false,
+    //         },
+    //         { // (...)
+    //             "begin": "(",
+    //             "end": ")",
+    //             "foldLastLine": false,
+    //         },
+    //         { // [...]
+    //             "begin": "[",
+    //             "end": "]",
+    //             "foldLastLine": false,
+    //         },
+    //         { // Preprocessor conditionals
+    //             "beginRegex": "^\\s*#\\s*if(?:(?:n)?def)?\\b", // "#if", "#ifdef", "#ifndef".
+    //             "middleRegex": "^\\s*#\\s*el(?:se|if)\\b", // "#else", "#elif"
+    //             "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
+    //         },
+    //     ],
+    // },
 }
