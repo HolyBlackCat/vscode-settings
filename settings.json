@@ -32,7 +32,7 @@
     "telemetry.telemetryLevel": "off",
 
     "[c][cpp]": {
-        "editor.autoIndent": "keep",
+        "editor.autoIndent": "advanced",
     },
 
     "workbench.activityBar.location": "top",
@@ -54,6 +54,7 @@
     "workbench.tree.indent": 12,
     "workbench.tree.renderIndentGuides": "always",
 
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.accessibilitySupport": "off",
     "editor.autoSurround": "quotes",
     "editor.bracketPairColorization.enabled": false,
@@ -90,6 +91,7 @@
     "window.experimentalControlOverlay": false,
     "window.menuBarVisibility": "visible",
     "window.restoreWindows": "none",
+    "window.title": "${dirty}${rootName}${separator}${activeEditorShort}${separator}${profileName}${separator}${appName}",
     "window.titleBarStyle": "custom",
 
     "debug.allowBreakpointsEverywhere": true,
@@ -155,6 +157,7 @@
     "git-graph.showStatusBarItem": false,
     "github.gitAuthentication": false,
     "gitlens.advanced.similarityThreshold": 90,
+    "gitlens.ai.enabled": false,
     "gitlens.ai.experimental.generateCommitMessage.enabled": false,
     "gitlens.blame.format": "${author|25?}:  ${message|40?} ${agoOrDate|14-}",
     "gitlens.codeLens.enabled": false,
@@ -287,7 +290,7 @@
         "-Wextra-semi",
     ],
 
-    "lldb-dap.executable-path": "/usr/bin/lldb-dap",
+    "lldb-dap.executable-path": "/home/holyblackcat/.clang/21.1.4/bin/lldb-dap",
 
     "lldb.consoleMode": "evaluate",
     "lldb.dereferencePointers": true,
