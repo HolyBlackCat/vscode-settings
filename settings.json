@@ -107,6 +107,7 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.initialHint": false,
     "terminal.integrated.scrollback": 50000,
     "terminal.integrated.profiles.windows": {
         "MSYS2 CLANG64": {
@@ -249,6 +250,7 @@
         }
     },
 
+    "scm.defaultViewMode": "tree",
     "scm.diffDecorationsGutterPattern":{
         "added": false,
         "modified": false,
@@ -262,7 +264,6 @@
     },
 
     "explorer.autoReveal": false,
-    "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmPasteNative": false,
@@ -328,7 +329,7 @@
     "lldb.launch.expressions": "native",
     "lldb.showDisassembly": "auto",
 
-    "chat.commandCenter.enabled": false,
+    "chat.disableAIFeatures": true,
 
     // The old manual C/C++ folding rules. No longer needed because Clangd now handles folding by itself.
     // "explicitFolding.rules": {
