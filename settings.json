@@ -306,7 +306,8 @@
     "clangd.arguments": [
         "--header-insertion=never",
         "--clang-tidy",
-        "--function-arg-placeholders=false"
+        "--function-arg-placeholders=false",
+        "--experimental-modules-support",
     ],
     "clangd.inactiveRegions.opacity": 0.7,
     "clangd.onConfigChanged": "restart",
