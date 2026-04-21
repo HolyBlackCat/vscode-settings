@@ -319,7 +319,7 @@
         "-Wextra-semi",
     ],
 
-    "lldb-dap.executable-path": "/home/holyblackcat/.clang/21.1.4/bin/lldb-dap",
+    "lldb-dap.executable-path": "/home/holyblackcat/.clang/22.1.0/bin/lldb-dap",
 
     "lldb.consoleMode": "evaluate",
     "lldb.dereferencePointers": true,
