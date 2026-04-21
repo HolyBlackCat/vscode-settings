@@ -108,14 +108,44 @@
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.scrollback": 50000,
-    // "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
-    // "terminal.integrated.shell.windows": "Z:\\Lander\\msys2\\usr\\bin\\bash.exe",
-    // "terminal.integrated.shellArgs.windows": ["--login", "-i"],
-    // "terminal.integrated.env.windows": {
-    //     "MSYSTEM": "MINGW64",
-    //     "MSYS2_PATH_TYPE": "inherit",
-    //     "CHERE_INVOKING": "yes",
-    // },
+    "terminal.integrated.profiles.windows": {
+        "MSYS2 CLANG64": {
+            "path": "C:/msys64/usr/bin/bash.exe",
+            "args": ["--login", "-i"], // `--login` is needed to automatically set certain environment variables on launch.
+            "env": {
+                "MSYSTEM": "CLANG64", // Select the desired MSYS2 subsystem.
+                "CHERE_INVOKING": "1", // Automatically `cd` to the current directory on launch.
+                "MSYS2_PATH_TYPE": "inherit", // Append the system PATH setting after the MSYS2 one.
+            }
+        },
+        "MSYS2 UCRT64": {
+            "path": "C:/msys64/usr/bin/bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "UCRT64",
+                "CHERE_INVOKING": "1",
+                "MSYS2_PATH_TYPE": "inherit",
+            }
+        },
+        "MSYS2 MINGW64": {
+            "path": "C:/msys64/usr/bin/bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "MINGW64",
+                "CHERE_INVOKING": "1",
+                "MSYS2_PATH_TYPE": "inherit",
+            }
+        },
+        "MSYS2 MSYS": {
+            "path": "C:/msys64/usr/bin/bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "MSYS",
+                "CHERE_INVOKING": "1",
+                "MSYS2_PATH_TYPE": "inherit",
+            }
+        },
+    },
 
     "security.workspace.trust.enabled": false,
 
