@@ -325,6 +325,9 @@
 
     "chat.disableAIFeatures": true,
 
+    // Use Podman instead of Docker for dev-containers.
+    "dev.containers.dockerPath": "podman",
+
     // The old manual C/C++ folding rules. No longer needed because Clangd now handles folding by itself.
     // "explicitFolding.rules": {
     //     "cpp": [
@@ -420,5 +423,5 @@
     //             "endRegex": "^\\s*#\\s*endif\\b", // "#endif"
     //         },
     //     ],
-    // },
+    // }
 }
