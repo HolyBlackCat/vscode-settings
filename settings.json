@@ -18,16 +18,6 @@
     // # Optional debugging extensions: (prefer lldb-dap)
     //     code --install-extension vadimcn.vscode-lldb
     //     code --install-extension webfreak.debug
-    //
-    // # Building LLDB-DAP:
-    //   * Clone https://github.com/llvm/llvm-project
-    //   * Checkout the latest stable branch; you can list the branches using: git tag | grep -P '^llvmorg-.*(?<!init)$' | sort -t- -n -k2
-    //   * sudo pacman -S node npm
-    //   * npm install
-    //   * Probably not needed: sudo npm install -g vsce
-    //   * npm run package
-    //   * If already installed, uninstall old version and purge the directory from `~/.vscode/extensions`.
-    //   * Install into VSC: npm run vscode-install
 
     "telemetry.telemetryLevel": "off",
 
